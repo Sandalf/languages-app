@@ -1,0 +1,13 @@
+<div class="container page-container" ng-controller="missionsCtrl">
+	<div class="col-sm-12 mission" ng-repeat="mission in missions">
+		<a ng-href="#/mission-{{mission.number}}.html">
+			<div class="mission-number">
+				<h4>Mission</h4>
+				<h5>{{mission.number}}</h5>
+			</div>
+			<div class="mission-name">
+				<h3>{{mission.name}}</h3>
+			</div>
+		</a>
+	</div>
+</div>

@@ -5,9 +5,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="/css/main.css">
+	<link rel="stylesheet" type="text/css" href="/css/missions.css">
 </head>
 <body ng-app="myApp">
 	<div class="header">
@@ -24,17 +26,8 @@
 			</div>
 		</div>
 	</div>
-	<div class="container page-container" ng-controller="missionsCtrl">
-		<div class="col-sm-12 mission" ng-repeat="mission in missions">
-			<div class="mission-number">
-				<h4>Mission</h4>
-				<h5>{{mission.number}}</h5>
-			</div>
-			<div class="mission-name">
-				<h3>{{mission.name}}</h3>
-			</div>
-		</div>
-	</div>
+	<div ng-view></div>
 	<script src="/js/main.js"></script>
+	<script src="/js/routes.js"></script>
 </body>
 </html>
