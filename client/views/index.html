@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>kID</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
+</head>
+<body ng-app="myApp">
+	<div class="header">
+		<div class="container">
+			<div class="navbar">
+				<div class="navbar-header">
+					<a class="navbar-brand"><span class="glyphicon glyphicon-user"></span></a>
+					<h4 class="user-name">User Name</h4>
+				</div>
+			</div>
+			<div class="points-container">
+				<h4>Points</h4>
+				<h4>500</h4>
+			</div>
+		</div>
+	</div>
+	<div class="container page-container" ng-controller="missionsCtrl">
+		<div class="col-sm-12 mission" ng-repeat="mission in missions">
+			<div class="mission-number">
+				<h4>Mission</h4>
+				<h5>{{mission.number}}</h5>
+			</div>
+			<div class="mission-name">
+				<h3>{{mission.name}}</h3>
+			</div>
+		</div>
+	</div>
+	<script src="/js/main.js"></script>
+</body>
+</html>

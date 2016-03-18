@@ -1,0 +1,80 @@
+* {
+	font-family: 'Roboto', sans-serif;
+}
+
+body {
+	background: #eee;
+}
+
+.header {
+	background: #fff;
+}
+
+.navbar {
+	display: inline-block;
+	float: left;
+}
+
+.points-container {
+	display: inline-block;
+	float: right;
+	color: #ccc;
+	padding-top: 8px;
+	text-align: center;
+}
+
+.glyphicon {
+	border: 2px solid #ccc;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	border-radius: 50%;
+	padding-top: 8px;
+	display: inline-block;
+	float: left;
+	color: #ccc !important;
+}
+
+.user-name {
+	display: inline-block;
+	float: left;
+	margin-top: 30px;
+	color: #888;
+}
+
+.page-container {
+	margin-top: 20px;
+}
+
+.mission {
+	height: 100px;
+	background: #fff;
+	padding-left: 0px;
+	margin-bottom: 20px;
+	transition: all .3s ease-out;
+}
+
+.mission:hover {
+	box-shadow: 2px 2px 4px #ccc;
+	cursor: pointer;
+}
+
+.mission-number {
+	padding-top: 20px;
+	text-align: center;
+	width: 100px;
+	height: 100px;
+	border-right: .1em solid #ddd;
+	display: inline-block;
+	float: left;
+}
+
+.mission-name {
+	text-align: center;
+	height: 100px;
+	width: calc(100%-100px);
+	padding-top: 20px;
+	padding-left: 20px; 
+	display: inline-block;
+	float: left;
+}
