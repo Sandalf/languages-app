@@ -3,7 +3,6 @@ app.controller('usersController', ['$scope','$resource', function($scope,$resour
 
 	User.query(function(results){
 		$scope.users = results;
-		console.log('hey');
 	});
 	
 	$scope.users = [];
