@@ -6,18 +6,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-resource.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="/css/main.css">
 	<link rel="stylesheet" type="text/css" href="/css/missions.css">
 </head>
 <body ng-app="myApp">
-	<div class="header">
+	<div ng-controller="usersController" class="header">
 		<div class="container">
 			<div class="navbar">
 				<div class="navbar-header">
 					<a class="navbar-brand"><span class="glyphicon glyphicon-user"></span></a>
-					<h4 class="user-name">User Name</h4>
+					<h4 class="user-name" ng-model='users'>{{users[0].name}}</h4>
 				</div>
 			</div>
 			<div class="points-container">
@@ -28,6 +29,7 @@
 	</div>
 	<div ng-view></div>
 	<script src="/js/main.js"></script>
+	<script src="/js/controllers/users-controller.js"></script>
 	<script src="/js/routes.js"></script>
 </body>
 </html>

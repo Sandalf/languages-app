@@ -1,4 +1,4 @@
-var app = angular.module('myApp', ['ngRoute']);
+var app = angular.module('myApp', ['ngRoute','ngResource']);
 
 app.controller('missionsCtrl', ['$scope', function($scope){
 	$scope.missions = [
